@@ -1,0 +1,164 @@
+/*main DOM elements*/
+body{
+  font-family:'Lato', sans-serif;
+}
+html, body{
+  /*width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;*/
+  overflow-x: hidden;
+}
+p{
+  font-size:14pt;
+}
+h1{
+  text-align: center;
+}
+h3:first-of-type{
+  margin-top:0;
+}
+h3{
+  font-size:24px;
+  margin-top:1.2em;
+}
+label{
+ font-size: 26px;
+ margin-bottom:0;
+}
+.label-wrapper{
+  text-align: right;
+  vertical-align: bottom;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+#adm, #years_exp{
+  /*width:max-content;*/
+  width:103px;
+}
+
+.flex-row{
+  display: flex;
+}
+.flex-row h3{
+  margin-right: 1em;
+  vertical-align: bottom;
+  margin-bottom: 0;
+}
+
+.income-input, .years-input{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0;
+  font-size: 26px;
+  width: 100%;
+  border-radius: unset;
+}
+.dollar-label{
+  border: none;
+    padding: 0;
+    background: none;
+}
+.flex-center{
+  display:flex;
+  justify-content: center;
+}
+.pads-zero{
+  padding:0;
+}
+
+
+/* sidebar */
+.sidebar-wrapper{
+  background-color: #ebedda;
+  padding: 0px;
+
+  }
+
+.table-num{
+  text-align:right;
+  font-size: 2.2em;
+}
+.sidebar-inner-mobile{
+  display:none;
+}
+.row.total{
+background-color: #a9bb46;
+padding: 10px;
+}
+.result_total, .result_total_1617, .result_total_1819{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+label.btn.btn-secondary {
+    border: 1px solid lightslategray;
+    border-radius: 0;
+    margin: 10px;
+}
+
+.purple-header{
+  background-color: #721852;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing:2px;
+  font-size:1.2em;
+}
+
+.active-btn{
+  background-color:#a9bb45!important;
+  color:white!important;
+}
+.btn-secondary{
+  background-color:#fff;
+  color:gray;
+}
+.btn-secondary:hover{
+  background-color:#a9bb45;
+  color:white;
+}
+.btn-secondary:not([disabled]):not(.disabled):active, .btn-secondary:not([disabled]):not(.disabled).active, .show > .btn-secondary.dropdown-toggle{
+  background-color:#a9bb45;
+
+}
+
+
+/** style overrides ***/
+label.results{
+  font-size:21px;
+}
+
+.al-left{
+  text-align:left;
+}
+.show-med-flex{
+  display:flex;
+}
+.hide-med-flex{
+  display:none;
+}
+
+
+@media (max-width: 992px) {
+.show-med-flex{
+  display:none;
+}
+.hide-med-flex{
+  display:flex;
+}
+label.results {
+    font-size: 18px;
+}
+
+
+ }
+
+ @media screen and (max-width: 768px) {
+   p.table-num{
+     font-size: 1.2em!important;
+     font-weight: 700;
+   }
+ }
